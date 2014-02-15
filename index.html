@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Andy's Keno</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="Bookmark" href="favicon.ico"/>
+<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+<script type="text/javascript" src="js/keno.js"></script>
+<link type="text/css"href="style/keno.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<div id="container">
+		<h1><img src="images/title.png"/></h1>
+		
+		<div class="row">
+			<div id="c1" name="c1" class="cell" onclick="markMe(this);">1</div>
+			<div id="c2" name="c2" class="cell" onclick="markMe(this);">2</div>
+			<div id="c3" name="c3" class="cell" onclick="markMe(this);">3</div>
+			<div id="c4" name="c4" class="cell" onclick="markMe(this);">4</div>
+			<div id="c5" name="c5" class="cell" onclick="markMe(this);">5</div>
+			<div id="c6" name="c6" class="cell" onclick="markMe(this);">6</div>
+			<div id="c7" name="c7" class="cell" onclick="markMe(this);">7</div>
+			<div id="c8" name="c8" class="cell" onclick="markMe(this);">8</div>
+			<div id="c9" name="c9" class="cell" onclick="markMe(this);">9</div>
+			<div id="c10" name="c10" class="cell" onclick="markMe(this);">10</div>
+		</div>
+		
+		<div class="row">
+			<div id="c11" name="c11" class="cell" onclick="markMe(this);">11</div>
+			<div id="c12" name="c12" class="cell" onclick="markMe(this);">12</div>
+			<div id="c13" name="c13" class="cell" onclick="markMe(this);">13</div>
+			<div id="c14" name="c14" class="cell" onclick="markMe(this);">14</div>
+			<div id="c15" name="c15" class="cell" onclick="markMe(this);">15</div>
+			<div id="c16" name="c16" class="cell" onclick="markMe(this);">16</div>
+			<div id="c17" name="c17" class="cell" onclick="markMe(this);">17</div>
+			<div id="c18" name="c18" class="cell" onclick="markMe(this);">18</div>
+			<div id="c19" name="c19" class="cell" onclick="markMe(this);">19</div>
+			<div id="c20" name="c20" class="cell" onclick="markMe(this);">20</div>
+		</div>
+		
+		<div class="row">
+			<div id="c21" name="c21" class="cell" onclick="markMe(this);">21</div>
+			<div id="c22" name="c22" class="cell" onclick="markMe(this);">22</div>
+			<div id="c23" name="c23" class="cell" onclick="markMe(this);">23</div>
+			<div id="c24" name="c24" class="cell" onclick="markMe(this);">24</div>
+			<div id="c25" name="c25" class="cell" onclick="markMe(this);">25</div>
+			<div id="c26" name="c26" class="cell" onclick="markMe(this);">26</div>
+			<div id="c27" name="c27" class="cell" onclick="markMe(this);">27</div>
+			<div id="c28" name="c28" class="cell" onclick="markMe(this);">28</div>
+			<div id="c29" name="c29" class="cell" onclick="markMe(this);">29</div>
+			<div id="c30" name="c30" class="cell" onclick="markMe(this);">30</div>
+		</div>
+		
+		<div class="row">
+			<div id="c31" name="c31" class="cell" onclick="markMe(this);">31</div>
+			<div id="c32" name="c32" class="cell" onclick="markMe(this);">32</div>
+			<div id="c33" name="c33" class="cell" onclick="markMe(this);">33</div>
+			<div id="c34" name="c34" class="cell" onclick="markMe(this);">34</div>
+			<div id="c35" name="c35" class="cell" onclick="markMe(this);">35</div>
+			<div id="c36" name="c36" class="cell" onclick="markMe(this);">36</div>
+			<div id="c37" name="c37" class="cell" onclick="markMe(this);">37</div>
+			<div id="c38" name="c38" class="cell" onclick="markMe(this);">38</div>
+			<div id="c39" name="c39" class="cell" onclick="markMe(this);">39</div>
+			<div id="c40" name="c40" class="cell" onclick="markMe(this);">40</div>
+		</div>
+		
+		<div class="gap"></div>
+		
+		<div class="row">
+			<div id="c41" name="c41" class="cell" onclick="markMe(this);">41</div>
+			<div id="c42" name="c42" class="cell" onclick="markMe(this);">42</div>
+			<div id="c43" name="c43" class="cell" onclick="markMe(this);">43</div>
+			<div id="c44" name="c44" class="cell" onclick="markMe(this);">44</div>
+			<div id="c45" name="c45" class="cell" onclick="markMe(this);">45</div>
+			<div id="c46" name="c46" class="cell" onclick="markMe(this);">46</div>
+			<div id="c47" name="c47" class="cell" onclick="markMe(this);">47</div>
+			<div id="c48" name="c48" class="cell" onclick="markMe(this);">48</div>
+			<div id="c49" name="c49" class="cell" onclick="markMe(this);">49</div>
+			<div id="c50" name="c40" class="cell" onclick="markMe(this);">50</div>
+		</div>
+		
+		<div class="row">
+			<div id="c51" name="c51" class="cell" onclick="markMe(this);">51</div>
+			<div id="c52" name="c52" class="cell" onclick="markMe(this);">52</div>
+			<div id="c53" name="c53" class="cell" onclick="markMe(this);">53</div>
+			<div id="c54" name="c54" class="cell" onclick="markMe(this);">54</div>
+			<div id="c55" name="c55" class="cell" onclick="markMe(this);">55</div>
+			<div id="c56" name="c56" class="cell" onclick="markMe(this);">56</div>
+			<div id="c57" name="c57" class="cell" onclick="markMe(this);">57</div>
+			<div id="c58" name="c58" class="cell" onclick="markMe(this);">58</div>
+			<div id="c59" name="c59" class="cell" onclick="markMe(this);">59</div>
+			<div id="c60" name="c60" class="cell" onclick="markMe(this);">60</div>
+		</div>
+		
+		<div class="row">
+			<div id="c61" name="c61" class="cell" onclick="markMe(this);">61</div>
+			<div id="c62" name="c62" class="cell" onclick="markMe(this);">62</div>
+			<div id="c63" name="c63" class="cell" onclick="markMe(this);">63</div>
+			<div id="c64" name="c64" class="cell" onclick="markMe(this);">64</div>
+			<div id="c65" name="c65" class="cell" onclick="markMe(this);">65</div>
+			<div id="c66" name="c66" class="cell" onclick="markMe(this);">66</div>
+			<div id="c67" name="c67" class="cell" onclick="markMe(this);">67</div>
+			<div id="c68" name="c68" class="cell" onclick="markMe(this);">68</div>
+			<div id="c69" name="c69" class="cell" onclick="markMe(this);">69</div>
+			<div id="c70" name="c70" class="cell" onclick="markMe(this);">70</div>
+		</div>
+		
+		<div class="row">
+			<div id="c71" name="c71" class="cell" onclick="markMe(this);">71</div>
+			<div id="c72" name="c72" class="cell" onclick="markMe(this);">72</div>
+			<div id="c73" name="c73" class="cell" onclick="markMe(this);">73</div>
+			<div id="c74" name="c74" class="cell" onclick="markMe(this);">74</div>
+			<div id="c75" name="c75" class="cell" onclick="markMe(this);">75</div>
+			<div id="c76" name="c76" class="cell" onclick="markMe(this);">76</div>
+			<div id="c77" name="c77" class="cell" onclick="markMe(this);">77</div>
+			<div id="c78" name="c78" class="cell" onclick="markMe(this);">78</div>
+			<div id="c79" name="c79" class="cell" onclick="markMe(this);">79</div>
+			<div id="c80" name="c80" class="cell" onclick="markMe(this);">80</div>
+		</div>
+		
+		<div class="msgbar">
+			<span class="label">押注(Bet): <span id="valBet" class="valBet"></span></span>
+			<span class="label">配對(Match): <span id="valMat" class="valMat"></span></span>
+			<span class="label">獲得(Win): $<span id="valWin" class="valWin"></span></span>
+			<span class="label">餘額(Balance): $<span id="valBal" class="valBal"></span></span>
+		</div>
+		
+		<div class="menu">
+			<button type="button" id="bet" name="bet" value="Bet" onclick="bet();">Bet</button>
+			<button type="button" id="erase" name="erase" value="Erase" onclick="erase();" >Erase</button>
+			<button type="button" id="start" name="start" value="Start" onclick="play();">Start</button>
+		</div>
+		
+	  <div class="rule">
+			<span>遊戲規則</span>
+            <p>
+            	玩家可以在桌面上任意選擇至少一個最多十個號碼。電腦會隨機開二十個號碼與玩家的選號做配對。電腦會根據玩家選號和配對成功的多寡而給予不同的賠率。玩家初始金額為＄20，每次遊戲至少得有一筆下注才能開始﹔當餘額用光時可以按[F5]刷新頁面來取得遊戲初始金額。
+            </p>
+		   <p>
+            	賭注 [Bet]: 每一次下注金額為＄0.25。<br />
+                清除 [Erase]: 清除桌面上所有押注的號碼跟賭注。<br />
+            	開始 [Start]: 開始/重新開始遊戲。<br />
+       	  </p>
+          <table width="100%" border="0">
+  <tr>
+    <th colspan="20" align="center">賠率表 </th>
+    </tr>
+  <tr>
+    <td colspan="2" align="center"><strong>1</strong></td>
+    <td colspan="2" align="center"><strong>2</strong></td>
+    <td colspan="2" align="center"><strong>3</strong></td>
+    <td colspan="2" align="center"><strong>4</strong></td>
+    <td colspan="2" align="center"><strong>5</strong></td>
+    <td colspan="2" align="center"><strong>6</strong></td>
+    <td colspan="2" align="center"><strong>7</strong></td>
+    <td colspan="2" align="center"><strong>8</strong></td>
+    <td colspan="2" align="center"><strong>9</strong></td>
+    <td colspan="2" align="center"><strong>10</strong></td>
+    </tr>
+  <tr>
+    <td>配對</td>
+    <td>賠率</td>
+    <td>配對</td>
+    <td>賠率</td>
+    <td>配對</td>
+    <td>賠率</td>
+    <td>配對</td>
+    <td>賠率</td>
+    <td>配對</td>
+    <td>賠率</td>
+    <td>配對</td>
+    <td>賠率</td>
+    <td>配對</td>
+    <td>賠率</td>
+    <td>配對</td>
+    <td>賠率</td>
+    <td>配對</td>
+    <td>賠率</td>
+    <td>配對</td>
+    <td>賠率</td>
+  </tr>
+  <tr>
+    <td><strong>1</strong></td>
+    <td>3</td>
+    <td><strong>1</strong></td>
+    <td>0</td>
+    <td><strong>1</strong></td>
+    <td>0</td>
+    <td><strong>1</strong></td>
+    <td>0</td>
+    <td><strong>1</strong></td>
+    <td>0</td>
+    <td><strong>1</strong></td>
+    <td>0</td>
+    <td><strong>1</strong></td>
+    <td>0</td>
+    <td><strong>1</strong></td>
+    <td>0</td>
+    <td><strong>1</strong></td>
+    <td>0</td>
+    <td><strong>1</strong></td>
+    <td>0</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><strong>2</strong></td>
+    <td>7</td>
+    <td><strong>2</strong></td>
+    <td>1</td>
+    <td><strong>2</strong></td>
+    <td>1</td>
+    <td><strong>2</strong></td>
+    <td>0</td>
+    <td><strong>2</strong></td>
+    <td>0</td>
+    <td><strong>2</strong></td>
+    <td>0</td>
+    <td><strong>2</strong></td>
+    <td>0</td>
+    <td><strong>2</strong></td>
+    <td>0</td>
+    <td><strong>2</strong></td>
+    <td>0</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><strong>3</strong></td>
+    <td>20</td>
+    <td><strong>3</strong></td>
+    <td>5</td>
+    <td><strong>3</strong></td>
+    <td>1</td>
+    <td><strong>3</strong></td>
+    <td>1</td>
+    <td><strong>3</strong></td>
+    <td>1</td>
+    <td><strong>3</strong></td>
+    <td>0</td>
+    <td><strong>3</strong></td>
+    <td>0</td>
+    <td><strong>3</strong></td>
+    <td>0</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><strong>4</strong></td>
+    <td>50</td>
+    <td><strong>4</strong></td>
+    <td>16</td>
+    <td><strong>4</strong></td>
+    <td>9</td>
+    <td><strong>4</strong></td>
+    <td>2</td>
+    <td><strong>4</strong></td>
+    <td>1</td>
+    <td><strong>4</strong></td>
+    <td>1</td>
+    <td><strong>4</strong></td>
+    <td>0</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><strong>5</strong></td>
+    <td>250</td>
+    <td><strong>5</strong></td>
+    <td>75</td>
+    <td><strong>5</strong></td>
+    <td>90</td>
+    <td><strong>5</strong></td>
+    <td>24</td>
+    <td><strong>5</strong></td>
+    <td>3</td>
+    <td><strong>5</strong></td>
+    <td>1</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><strong>6</strong></td>
+    <td>1000</td>
+    <td><strong>6</strong></td>
+    <td>250</td>
+    <td><strong>6</strong></td>
+    <td>90</td>
+    <td><strong>6</strong></td>
+    <td>32</td>
+    <td><strong>6</strong></td>
+    <td>16</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><strong>7</strong></td>
+    <td>2000</td>
+    <td><strong>7</strong></td>
+    <td>400</td>
+    <td><strong>7</strong></td>
+    <td>125</td>
+    <td><strong>7</strong></td>
+    <td>90</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><strong>8</strong></td>
+    <td>4000</td>
+    <td><strong>8</strong></td>
+    <td>1000</td>
+    <td><strong>8</strong></td>
+    <td>400</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><strong>9</strong></td>
+    <td>5000</td>
+    <td><strong>9</strong></td>
+    <td>1250</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><strong>10</strong></td>
+    <td>5000</td>
+    </tr>
+</table>
+		<p>
+        	*在網址後方輸入 <i>"?lang=encode"</i> 可得到不同語言的訊息。目前編碼(encode)支援 [big5:繁體中文] [en:英文]。 <br />
+            *該賠率表裡的賠率並非正規Keno賠率，僅供遊戲參考。
+        </p>
+		</div>
+		
+		<div class="footer">
+			&copy; copyright 2010 Andy's Keno, powered by Andy C.
+		</div>
+    </div>
+    
+</body>
+</html> 

@@ -1,0 +1,91 @@
+body{
+	font: 12px Verdana, Times New Roman, Arial, Calibri;
+	margin: 10px;
+	padding: 0;
+	text-align:center;
+	background:black;
+	color: white;
+}
+p{
+	line-height:20px;
+}
+table{
+	border-collapse: collapse;
+	background: #275C3E;
+}
+td, th{
+	border:thin solid white;
+	
+}
+th{
+	background-color:#034234;
+}
+.cell{
+	width:70px;
+    display:inline-block;
+	*display:inline !important; // For IE
+	margin:auto;
+	margin-left:-5px;
+    border:thin solid white;
+    font-weight:bold;
+    font-size:20px;
+    background-color:#364389;
+	line-height:50px;
+}
+.row div:hover{
+    background:#47B7FC;
+}
+#container{
+	margin: 0 auto;
+	width:800px;
+}
+.gap{
+	height: 20px;
+}
+.menu, .msgbar, .footer{
+	margin-top:20px;
+}
+
+.msgbar span.label{
+	margin-left:20px;
+	font-size:20px;
+}
+.footer{
+	font-size:11px;
+	color:#cccccc;
+}
+
+.menu button{
+	font: 20px Verdana, Times New Roman, Arial, Calibri;
+	-moz-border-radius: 15px; /* Firefox */
+	-webkit-border-radius: 15px; /* Safari and Chrome */
+	border-radius: 15px; /* IE */
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-khtml-border-radius: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	background: #2F4F4F;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#2F4F4F), to(#66EE33));
+	background: -moz-linear-gradient(#2F4F4F, #66EE33);
+	-pie-background: linear-gradient(#2F4F4F, #66EE33);
+	behavior: url(/PIE.htc);
+	*background: #2F4F4F;	/* IE */
+	width:80px;
+	height:80px;
+	border:thin solid white;
+	font-weight:bold;
+	color:white;
+	margin:20px 10px;
+}
+.menu button:hover{
+	background: #8C2222;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#8C2222), to(#F42222));
+	background: -moz-linear-gradient(#8C2222, #F42222);
+	-pie-background: linear-gradient(#8C2222, #F42222);
+}
+.menu button:active{
+	background: #333333;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#333333), to(grey));
+	background: -moz-linear-gradient(#333333, grey);
+	-pie-background: linear-gradient(#333333, grey);
+}
